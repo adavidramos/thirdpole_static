@@ -1,2 +1,13 @@
+
+// project setup
+@import "_conf";
+
+// foundation
 @import "settings";
 @import "foundation";
+
+// project styles
+@import "_nano";
+@import "_micro";
+@import "_typography";
+@import "_layout";
