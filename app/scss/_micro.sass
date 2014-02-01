@@ -1,9 +1,13 @@
 
 // --------------------------------------------
-// PAGE TOP
+// HEADER
 
 
 // global nav
+
+.header--top-bar *
+	font-size: 1em !important
+	
 .nav-search-box
 	background-color: $cH2 !important
 	
@@ -46,6 +50,18 @@
 	@include respond-to($qMid)
 		width: 100%
 
+
+
+// --------------------------------------------
+// FOOTER
+
+.footer
+	margin-top: 3em
+	padding-top: 1em
+	padding-bottom: 4em
+	border-top: 1px solid $cH1
+	color: $cH
+
 // --------------------------------------------
 // DATASET DETAIL
 
@@ -66,7 +82,7 @@
 		float: left
 		clear: left
 		@include borderbox
-		border-top: 1px solid $cH2
+		border-top: 1px solid $cH1
 		font-weight: normal
 		color: $cH
 	dd
@@ -75,5 +91,8 @@
 		margin: 0
 		float: left
 		@include borderbox
-		border-top: 1px solid $cH2
+		border-top: 1px solid $cH1
 		font-weight: normal
+
+.dataset--details
+	margin-top: 3em
