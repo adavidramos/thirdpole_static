@@ -1,19 +1,79 @@
 
-// GLOBAL NAV
+// --------------------------------------------
+// PAGE TOP
 
+
+// global nav
 .nav-search-box
 	background-color: $cH2 !important
+	
 .nav-search-button
 	color: $cH
 	background-color: $cH2
 
 
+// breadcrumbs
 
+.header--breadcrumbs
+	margin-bottom: 1.5em
+
+.breadcrumbs
+	letter-spacing: 0.04em
+
+
+// return to search results
+
+.results-back
+	margin-top: 0
+	margin-bottom: 2em
+	font-style: italic
+	color: $cH
+	i
+		@include respond-to($qMid)
+			display: block
+			clear: both
+			padding: 1em
+			text-align: center
+
+.results-back--bd
+	margin-left: $column-gutter/2
+	@include borderbox
+	background: $cH2
+	
+.results-back--button
+	margin: 0 1em 0 0
+	font-style: normal
+	@include respond-to($qMid)
+		width: 100%
+
+// --------------------------------------------
 // DATASET DETAIL
 
 .preview-image
 	padding: 0.5em 0 0 0 !important
 	
 .preview-image--image
-	width: 100%
+	max-width: 100%
 	background: #eee
+	
+.dataset--metadata
+	margin: 2em 0 2em 0
+	line-height: 1.2em
+	dt
+		width: 35%
+		padding: 0.5em 0.75em 0.5em 0
+		margin: 0
+		float: left
+		clear: left
+		@include borderbox
+		border-top: 1px solid $cH2
+		font-weight: normal
+		color: $cH
+	dd
+		width: 60%
+		padding: 0.5em 0em 0.5em 0
+		margin: 0
+		float: left
+		@include borderbox
+		border-top: 1px solid $cH2
+		font-weight: normal

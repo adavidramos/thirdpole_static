@@ -191,7 +191,7 @@ $crumb-font-size: rem-calc(11);
 $crumb-font-color: $cB;
 $crumb-font-color-current: #333;
 $crumb-font-color-unavailable: #999;
-$crumb-font-transform: none;
+$crumb-font-transform: uppercase;
 $crumb-link-decor: underline;
 
 // We use these to control the slash between breadcrumbs
@@ -945,18 +945,18 @@ $topbar-margin-bottom: 0.0em;
 
 // Style the top bar dropdown elements
 $topbar-dropdown-bg: $cH2;
-$topbar-dropdown-link-color: $cG;
+$topbar-dropdown-link-color: $cB;
 $topbar-dropdown-link-bg: $cH2;
 $topbar-dropdown-toggle-size: 5px;
-$topbar-dropdown-toggle-color: $cG;
+$topbar-dropdown-toggle-color: $cB;
 $topbar-dropdown-toggle-alpha: 1.0;
 
 // Set the link colors and styles for top-level nav
-$topbar-link-color: $cG;
-$topbar-link-color-hover: $cB;
-$topbar-link-color-active: $cB;
+$topbar-link-color: $cB;
+$topbar-link-color-hover: $cA;
+$topbar-link-color-active: $cA;
 $topbar-link-weight: normal;
-$topbar-link-font-size: rem-calc(13);
+$topbar-link-font-size: 1em;
 $topbar-link-hover-lightness: -10%; // Darken by 10%
 $topbar-link-bg-hover: $cH2;
 $topbar-link-bg-active: $cH2;
@@ -973,12 +973,12 @@ $topbar-dropdown-label-bg: $cH2;
 
 // Top menu icon styles
 $topbar-menu-link-transform: uppercase;
-$topbar-menu-link-font-size: rem-calc(13);
+$topbar-menu-link-font-size: 1em;
 $topbar-menu-link-weight: bold;
-$topbar-menu-link-color: $cG;
-$topbar-menu-icon-color: $cG;
-$topbar-menu-link-color-toggled: #888;
-$topbar-menu-icon-color-toggled: #888;
+$topbar-menu-link-color: $cB;
+$topbar-menu-icon-color: $cB;
+$topbar-menu-link-color-toggled: $cB;
+$topbar-menu-icon-color-toggled: $cB;
 
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;
