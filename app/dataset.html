@@ -4,12 +4,17 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Third Pole Datanet</title>
+		
+		<!-- TODO concatenate font CSS for production -->
+		<link rel="stylesheet" href="/assets/fonts/font-awesome-4.0.3/css/font-awesome.min.css">
+		
 		<!-- build:css(.tmp) styles/app.css -->
 		<link rel="stylesheet" href="styles/app.css" />
 		<!-- endbuild -->
 		<!-- build:js scripts/vendor/modernizr.js -->
 		<script src="bower_components/modernizr/modernizr.js"></script>
 		<!-- endbuild -->
+
 	</head>
 	<body>
 	
@@ -78,6 +83,8 @@
 					<dd>1985–2008</dd>
 					<dt>Country of Origin</dt>
 					<dd>Bangladesh and United Kingdom</dd>
+					<dt>Uploaded by</dt>
+					<dd>Anne Other</dd>
 				</dl>
 				
 			</div>
@@ -95,11 +102,36 @@
 			</div>
 			<div class="large-3 columns">
 				<h3>Reviews</h3>
-				<p><strong>3</strong> favorable</p>
-				<p><strong>1</strong> unfavorable</p>
+				<ul class="reviews-summary">
+					<li class="symbol-plus"><i class="fa fa-minus-square"></i> <strong>3</strong> positive</li> 
+					<li class="symbol-minus"><i class="fa fa-plus-square"></i> <strong>1</strong> negative</li>
+				</ul>
+				<ul class="reviews-list">
+					<li><a href=""><i class="fa fa-plus-square symbol-plus"></i> Intro of review here</a></li>
+					<li><a href=""><i class="fa fa-minus-square symbol-minus"></i> Criticism here</a></li>
+					<li><a href=""><i class="fa fa-plus-square symbol-plus"></i> People think well of</a></li>
+					<li><a href=""><i class="fa fa-plus-square symbol-plus"></i> Agreement too</a></li>
+				</ul>
 			</div>
 			<div class="large-3 columns">
-				<p>Commons-based peer production hyperlocal David Cohn just across the wire.</p>
+				<h3>Downloads</h3>
+				<ul class="downloads-list">
+					<li><a href="">Shapefile</a></li>
+					<li><a href="">Image (JPEG)</a></li>
+					<li><a href="">GeoJSON</a></li>
+				</ul>
+			</div>
+		</div>		
+
+		<!-- dataset parts -->
+		<div class="row dataset--parts">
+			<div class="large-6 columns">
+				<h3>Supporting Documents</h3>
+				<ul class="downloads-list">
+					<li><a href="">Document One</a></li>
+					<li><a href="">Second Document</a></li>
+					<li><a href="">Additional Material</a></li>
+				</ul>
 			</div>
 		</div>		
 		

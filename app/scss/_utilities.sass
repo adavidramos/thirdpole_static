@@ -7,6 +7,19 @@
 	-webkit-box-sizing: border-box
 	box-sizing: border-box
 
+// responsive
 @mixin respond-to($breakpoint)
 	@media only screen and (max-width: $breakpoint)
 		@content
+
+// inline lists
+// (Why? Because Foundation's set all children of inline LIs as display block.)
+@mixin inline_list_x
+	margin: 0
+	padding: 0
+	& > li
+		display: inline-block
+		list-style: none
+		margin: 0 0.5em 0 0
+		padding: 0
+		
