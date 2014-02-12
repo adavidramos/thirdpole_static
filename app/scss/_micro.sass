@@ -57,17 +57,18 @@
 // DATASET SEARCH
 
 .result
-	@include grid-row()
-	margin: 1em 0 1em 0
+	margin: 0 0 1em 0
 	padding: 0.5em 0 0 0
+	@include clearfix
 	
 .result-hd
-	@include grid-column(12)
 	border-top: 1px solid $cH1
+	padding-top: 0.5em
 
 .result-meta
+	width: 50%
+	float: left
 	p
-		@include grid-column(6)
 		@include smaller
 		margin: 0 0 0 0
 
