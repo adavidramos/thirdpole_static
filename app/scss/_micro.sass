@@ -5,7 +5,7 @@
 
 // global nav
 
-.header--top-bar *
+.header *
 	font-size: 1em !important
 	
 .nav-search-box
@@ -18,7 +18,7 @@
 
 // breadcrumbs
 
-.header--breadcrumbs
+.nav-breadcrumbs
 	margin-bottom: 1.5em
 
 .breadcrumbs
@@ -49,6 +49,27 @@
 	font-style: normal
 	@include respond-to($qMid)
 		width: 100%
+
+
+
+
+// --------------------------------------------
+// DATASET SEARCH
+
+.result
+	@include grid-row()
+	margin: 1em 0 1em 0
+	padding: 0.5em 0 0 0
+	
+.result-hd
+	@include grid-column(12)
+	border-top: 1px solid $cH1
+
+.result-meta
+	p
+		@include grid-column(6)
+		@include smaller
+		margin: 0 0 0 0
 
 
 
