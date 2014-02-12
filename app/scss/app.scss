@@ -1,16 +1,18 @@
 
-// dependencies
-@import "compass/utilities/general/clearfix";
-
 // project setup
 @import "_conf";
-@import "_utilities";
 
 // foundation
 @import "settings";
 @import "foundation";
 
+// dependencies
+@import "compass/utilities/general/clearfix";
+@import "compass/utilities/lists/inline-list";
+@import "compass/utilities/lists/inline-block-list";
+
 // project styles
+@import "_utilities";
 @import "_typography";
 @import "_nano";
 @import "_micro";

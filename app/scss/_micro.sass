@@ -57,20 +57,33 @@
 // DATASET SEARCH
 
 .result
-	margin: 0 0 1em 0
+	margin: 0 0 1.5em 0
 	padding: 0.5em 0 0 0
-	@include clearfix
-	
-.result-hd
+	+clearfix
 	border-top: 1px solid $cH1
-	padding-top: 0.5em
-
-.result-meta
-	width: 50%
+	
+.result--hd
+	width: 20%
+	margin-right: 0.75em
 	float: left
-	p
-		@include smaller
-		margin: 0 0 0 0
+	img
+		position: relative
+		top: -0.5em
+
+.result--bd
+	float: left
+
+.result-meta,
+.result-meta-detail
+	+inline-block-list
+	li
+		margin: 0 0.25em 0 0
+		+smaller
+	.meta-origin
+		clear: both
+	.meta-project,
+	.meta-interval
+		color: $cH
 
 
 
