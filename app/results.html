@@ -66,16 +66,66 @@
 			</div>
 		</div>
 
-		<div class="row search-box">
-			<div class="large-12 search-box--bd">
-			</div>
-		</div>
-
 		<div class="container">
+
+			<div class="search-box">
+				<div class="search-box--bd">
+					<label for="field-search">New Search</label>
+					<input type="search" id="field-search">
+					<input type="submit" class="search-submit" value="Search">
+				</div>
+			</div>
 
 			<!-- filters -->
 			<div class="left-sidebar search-filters">
-				filt
+				
+				<form>
+					
+					<h3>Results Filter</h3>
+					
+					<dl class="form-stacked">
+						
+						<dt><label for="field-filter-org">Organization</label></dt>
+						<dd>
+							<select id="field-filter-org">
+								<option></option>
+								<option>Physical Geology Institute</option>
+								<option>Riparian Vegetation Center</option>
+								<option>Gokarna Park Management</option>
+							</select>						
+						</dd>
+
+						<dt><label for="field-filter-country">Country of Origin</label></dt>
+						<dd>
+							<select id="field-filter-country">
+								<option></option>
+								<option>Afghanistan</option>
+								<option>Bangladesh</option>
+								<option>Bhutan</option>
+								<option>China</option>
+								<option>India</option>
+								<option>Myanmar</option>
+								<option>Nepal</option>
+								<option>Pakistan</option>
+								<option>United Kingdom</option>
+								<option>United States</option>
+							</select>						
+						</dd>
+
+						<dt><label for="field-filter-data-year">Data Year</label></dt>
+						<dd><input type="text" id="field-filter-data-year"></dd>
+
+						<dt><label for="field-filter-country">Data Type</label></dt>
+						<dd>
+							<select id="field-filter-country">
+								<option></option>
+								<option></option>
+							</select>						
+						</dd>
+						
+					</dl>
+				</form>
+				
 			</div>
 
 			<div class="main search-results">
