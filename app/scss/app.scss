@@ -11,10 +11,19 @@
 @import "compass/utilities/lists/inline-list";
 @import "compass/utilities/lists/inline-block-list";
 
-// project styles
+// project modules
 @import "_utilities";
 @import "_typography";
-@import "_forms";
 @import "_nano";
-@import "_micro";
+@import "_lists";
+@import "_forms";
+@import "_buttons";
 @import "_layout";
+@import "_nav";
+@import "_header";
+@import "_footer";
+
+// project specialized modules
+@import "_search";
+@import "_dataset";
+
