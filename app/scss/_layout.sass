@@ -1,27 +1,5 @@
 
 
-.container
-	max-width: $bp-full
-	margin: 0 auto
-	@include clearfix
-
-.left-sidebar
-	margin-top: 2em 
-	padding: 0 2em 0 0
-	width: 25%
-	float: left
-	
-.main
-	margin-top: 2em
-	margin-bottom: 4em
-	width: 75%
-	float: left
-	
-.main-wide
-	margin-top: 4em
-	margin-bottom: 4em
-	width: 100%
-
 
 // ------------------------------------------
 // simple, reusable grid modules	
@@ -38,17 +16,56 @@
 	float: left
 	@include respond-to($bp-small)
 		width: 100%
-		padding-left: $cols-gutter
+		padding-left: 0
+		padding-right: 0
 		clear: both
 
-.cols-small
+.cols-wide
+	width: 75%
+	padding-right: $cols-gutter
+	float: left
+	@include respond-to($bp-small)
+		width: 100%
+		padding-left: 0
+		padding-right: 0
+		clear: both
+
+.cols-narrow
 	width: 25%
 	padding-right: $cols-gutter
 	float: left
 	@include respond-to($bp-small)
 		width: 100%
-		padding-left: $cols-gutter
+		padding-left: 0
+		padding-right: 0
 		clear: both
+
+
+// ------------------------------------------
+// frequently-used template elements	
+
+.container
+	max-width: $bp-full
+	margin: 0 auto
+	@include clearfix
+	@include respond-to($bp-full)
+		padding: 2em $cols-gutter
+
+.left-sidebar
+	@extend .cols-narrow
+	margin-top: 2em 
+	padding: 0 2em 0 0
+	
+.main
+	@extend .cols-wide
+	margin-top: 2em
+	margin-bottom: 4em
+	
+.main-full
+	margin-top: 4em
+	margin-bottom: 4em
+	width: 100%
+
 
 
 // --------------------------------------------
