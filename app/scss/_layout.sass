@@ -1,7 +1,7 @@
 
 
 .container
-	max-width: $bp_full
+	max-width: $bp-full
 	margin: 0 auto
 	@include clearfix
 
@@ -24,7 +24,7 @@
 
 
 // ------------------------------------------
-// reusable grid modules	
+// simple, reusable grid modules	
 
 .cols-row
 	width: 100%
@@ -36,11 +36,19 @@
 	width: 50%
 	padding-right: $cols-gutter
 	float: left
+	@include respond-to($bp-small)
+		width: 100%
+		padding-left: $cols-gutter
+		clear: both
 
 .cols-small
 	width: 25%
 	padding-right: $cols-gutter
 	float: left
+	@include respond-to($bp-small)
+		width: 100%
+		padding-left: $cols-gutter
+		clear: both
 
 
 // --------------------------------------------
@@ -57,7 +65,6 @@
 
 .footer-left,
 .footer-right
-	width: 50%
-	float: left
+	@extend .cols-half
 
 
