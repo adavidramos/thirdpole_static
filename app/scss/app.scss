@@ -8,17 +8,17 @@
 
 // dependencies
 @import "compass/utilities/general/clearfix";
-@import "compass/utilities/lists/inline-list";
-@import "compass/utilities/lists/inline-block-list";
+@import "compass/typography/lists/inline-list";
+@import "compass/typography/lists/inline-block-list";
 
 // general-purpose modules
 @import "_utilities";
+@import "_layout";
 @import "_typography";
 @import "_nano";
 @import "_lists";
 @import "_forms";
 @import "_buttons";
-@import "_layout";
 @import "_nav";
 @import "_header";
 @import "_footer";
