@@ -6,7 +6,7 @@
 	margin: 0 0 1.5em 0
 	padding: 0.5em 0 0 0
 	+clearfix
-	border-top: 1px solid $cH1
+	// border-top: 1px solid $cH1
 	
 .result--hd
 	width: 20%
@@ -64,6 +64,10 @@
 		@include borderbox
 		border-top: 1px solid $cH1
 		font-weight: normal
+	dd + dd
+		margin-left: 35%
+		padding-top: 0
+		border-top: none
 
 .dataset--details
 	margin-top: 3em
@@ -74,7 +78,8 @@
 .downloads-list
 	@extend .list-small
 
-
+.dataset-locator-map
+	margin-bottom: 3em
 
 // dataset reviews
 
