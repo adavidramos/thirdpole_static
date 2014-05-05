@@ -12,18 +12,18 @@
 @import "compass/typography/lists/inline-block-list";
 
 // general-purpose modules
-@import "_utilities";
-@import "_layout";
-@import "_typography";
-@import "_nano";
-@import "_lists";
-@import "_forms";
-@import "_buttons";
-@import "_nav";
-@import "_header";
-@import "_footer";
-@import "_search";
+@import "base/_utilities";
+@import "base/_layout";
+@import "base/_typography";
+@import "base/_nano";
+@import "base/_lists";
+@import "base/_forms";
+@import "base/_buttons";
+@import "base/_nav";
+@import "base/_header";
+@import "base/_footer";
+@import "base/_search";
 
 // project-specific modules
-@import "_dataset";
+@import "project/_dataset";
 

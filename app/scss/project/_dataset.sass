@@ -1,0 +1,101 @@
+
+
+
+
+.result
+	margin: 0 0 1.5em 0
+	padding: 0.5em 0 0 0
+	+clearfix
+	// border-top: 1px solid $cH1
+	
+.result--hd
+	width: 20%
+	margin-right: 0.75em
+	float: left
+	img
+		position: relative
+		top: -0.5em
+
+.result--bd
+	float: left
+
+.result-meta,
+.result-meta-detail
+	+inline-block-list
+	li
+		margin: 0 0.25em 0 0
+		+smaller
+	.meta-origin
+		clear: both
+	.meta-project,
+	.meta-interval
+		color: $cH
+
+
+
+// --------------------------------------------
+// DATASET DETAIL
+
+.preview-image
+	padding: 0.5em 0 0 0 !important
+	
+.preview-image--image
+	max-width: 100%
+	background: #eee
+	
+.dataset--metadata
+	margin: 2em 0 2em 0
+	line-height: 1.2em
+	dt
+		width: 35%
+		padding: 0.5em 0.75em 0.5em 0
+		margin: 0
+		float: left
+		clear: left
+		@include borderbox
+		border-top: 1px solid $cH1
+		font-weight: normal
+		color: $cH
+	dd
+		width: 60%
+		padding: 0.5em 0em 0.5em 0
+		margin: 0
+		float: left
+		@include borderbox
+		border-top: 1px solid $cH1
+		font-weight: normal
+	dd + dd
+		margin-left: 35%
+		padding-top: 0
+		border-top: none
+
+.dataset--details
+	margin-top: 3em
+
+.reviews-list
+	@extend .list-small
+
+.downloads-list
+	@extend .list-small
+
+.dataset-locator-map
+	margin-bottom: 3em
+
+// dataset reviews
+
+.reviews-summary
+	@include inline_list_x
+	
+.reviews-list
+	margin-top: 1em
+	a
+		color: $cT
+	
+// metadata
+
+dd.meta-org
+	font-size: 1.35em
+	line-height: 1.25em
+
+dt.meta-org
+	padding-top: 1.05em
