@@ -25,3 +25,18 @@ select
 		padding: 0
 	label
 		padding-left: 0.4em
+		
+		
+// checkboxes
+input[type=checkbox] + label
+	margin: 0
+	padding: 0 0 0 18px
+	background-image: url('/assets/images/checkbox.gif')
+	background-repeat: no-repeat
+	background-position: 0px 1px
+	
+input[type=checkbox]
+	@extend .visuallyhidden
+
+input[type=checkbox]:checked + label
+	background-image: url('/assets/images/checkbox--checked.gif')
