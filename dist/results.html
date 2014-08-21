@@ -77,58 +77,51 @@
 					
 					<h3>Results Filter</h3>
 					
-					<dl class="form-stacked">
+					<div class="results-filter">
 						
-						<dt><label for="field-filter-org">Topic</label></dt>
-						<dd>
-							<select id="field-filter-topic">
-								<option></option>
-								<option>Climate Change</option>
-								<option>Drinking Water</option>
-								<option>Flooding</option>
-								<option>Fisheries</option>
-							</select>						
-						</dd>
-
-						<dt><label for="field-filter-org">Organization</label></dt>
-						<dd>
-							<select id="field-filter-org">
-								<option></option>
-								<option>Physical Geology Institute</option>
-								<option>Riparian Vegetation Center</option>
-								<option>Gokarna Park Management</option>
-							</select>						
-						</dd>
-
-						<dt><label for="field-filter-country">Country of Origin</label></dt>
-						<dd>
-							<select id="field-filter-country">
-								<option></option>
-								<option>Afghanistan</option>
-								<option>Bangladesh</option>
-								<option>Bhutan</option>
-								<option>China</option>
-								<option>India</option>
-								<option>Myanmar</option>
-								<option>Nepal</option>
-								<option>Pakistan</option>
-								<option>United Kingdom</option>
-								<option>United States</option>
-							</select>						
-						</dd>
-
-						<dt><label for="field-filter-data-year">Data Year</label></dt>
-						<dd><input type="text" id="field-filter-data-year"></dd>
-
-						<dt><label for="field-filter-country">Data Type</label></dt>
-						<dd>
-							<select id="field-filter-country">
-								<option></option>
-								<option></option>
-							</select>						
-						</dd>
+						<section id="results-filter-topic">
+							<h4>Topic</h4>
+							<ul class="filter-group">
+								<li><input type="checkbox" id="cb-1" checked="checked"><label for="cb-1">Climate Change</label></li>
+								<li><input type="checkbox" id="cb-2" checked="checked"><label for="cb-2">Drinking Water</label></li>
+								<li><input type="checkbox" id="cb-3"><label for="cb-3">Flooding</label></li>
+								<li><input type="checkbox" id="cb-4"><label for="cb-4">Fisheries</label></li>
+							</ul>
+							<p class="more"><a href="#">(show all)</a></p>
+							<p class="less"><a href="#">(less)</a></p>
+						</section>
 						
-					</dl>
+						<section id="results-filter-organization">
+							<h4>Organization</h4>
+							<ul class="filter-group">
+								<li><input type="checkbox" id="cb-5"><label for="cb-5">Physical Geology Institute</label></li>
+								<li><input type="checkbox" id="cb-6"><label for="cb-6">Riparian Vegetation Center</label></li>
+								<li><input type="checkbox" id="cb-7"><label for="cb-7">Gokarna Park Management</label></li>
+							</ul>
+							<p class="more"><a href="#">(show all)</a></p>
+							<p class="less"><a href="#">(less)</a></p>
+						</section>
+
+						<section id="results-filter-coverage">
+							<h4>Country Coverage</h4>
+							<ul class="filter-group">
+								<li><input type="checkbox" id="cb-8"><label for="cb-8">Afghanistan</label></li>
+								<li><input type="checkbox" id="cb-9"><label for="cb-9">Bangladesh</label></li>
+								<li><input type="checkbox" id="cb-10"><label for="cb-10">Bhutan</label></li>
+								<li><input type="checkbox" id="cb-11"><label for="cb-11">China</label></li>
+								<li><input type="checkbox" id="cb-12"><label for="cb-12">India</label></li>
+								<li><input type="checkbox" id="cb-13"><label for="cb-13">Myanmar</label></li>
+								<li><input type="checkbox" id="cb-14"><label for="cb-14">Nepal</label></li>
+								<li><input type="checkbox" id="cb-15"><label for="cb-15">Pakistan</label></li>
+								<li><input type="checkbox" id="cb-16"><label for="cb-16">United Kingdom</label></li>
+								<li><input type="checkbox" id="cb-17"><label for="cb-17">United States</label></li>
+							</ul>
+							<p class="more"><a href="#">(show all)</a></p>
+							<p class="less"><a href="#">(less)</a></p>
+						</section>
+							
+					</div>
+					
 				</form>
 				
 			</div>
