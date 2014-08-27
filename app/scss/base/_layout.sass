@@ -9,7 +9,17 @@
 	padding-right: $cols-gutter
 	clear: both
 	@include clearfix
-	
+
+.cols-third
+	width: 33.333%
+	padding-right: $cols-gutter
+	float: left
+	@include respond-to($bp-small)
+		width: 100%
+		padding-left: 0
+		padding-right: 0
+		clear: both
+
 .cols-half
 	width: 50%
 	padding-right: $cols-gutter
